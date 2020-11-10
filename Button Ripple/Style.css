@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: itim;
+    font-weight: bold;
+}
+
+body {
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    user-select: none;
+    padding: 25px;
+    width: 150px;
+    margin: 10px;
+    position: relative;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50px; 
+    background-image: linear-gradient(45deg, #43C6AC, #191654);
+    overflow: hidden;
+}
+
+.button:nth-child(odd) {
+    background-image: linear-gradient(45deg, #4568DC, #B06AB3);
+}
+
+span {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    animation: 1s anime linear infinite;
+    border-radius: 50%;
+}
+
+@keyframes anime {
+    from {
+        width: 15px;
+        height: 15px;
+        opacity: 0.5;
+    }
+    to {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="button">Button 1</div>
+    <div class="button">Button 2</div>
+</body>
+    <script>
+        var btn = document.querySelectorAll(".button")
+        btn.forEach(b => {
+            b.addEventListener("click", function(e){
+                let x = e.clientX - b.getBoundingClientRect().left;
+                let y = e.clientY - b.getBoundingClientRect().top;
+
+                let ripples = document.createElement("span");
+                ripples.style.left = x + "px";
+                ripples.style.top = y + "px";
+                b.appendChild(ripples)
+
+                setTimeout(()=>{
+                    ripples.remove();
+                }, 1000)
+            })
+        })
+    </script>
+</html>
