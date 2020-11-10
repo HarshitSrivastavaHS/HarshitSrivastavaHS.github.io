@@ -32,6 +32,10 @@ body {
     overflow: hidden;/*Made By Harshit Srivastava (TechAllByHarshit)*/
 }
 
+.button:active {
+    outline: none;
+}
+
 .button:nth-child(odd) {
     background-image: linear-gradient(45deg, #4568DC, #B06AB3);
     /*Made By Harshit Srivastava (TechAllByHarshit)*/
