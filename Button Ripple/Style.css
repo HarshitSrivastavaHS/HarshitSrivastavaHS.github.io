@@ -7,6 +7,7 @@
     box-sizing: border-box;
     font-family: itim;
     font-weight: bold;
+    -webkit-tap-highlight-color: rgba(0,0,0,0)
 }
 
 body {
