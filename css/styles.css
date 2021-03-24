@@ -1,0 +1,178 @@
+/* Typography */
+
+html {
+	font-family: 'Roboto', sans-serif;
+}
+
+@media (min-width: 576px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 768px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 992px) {
+	html {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1200px) {
+	html {
+		font-size: 20px;
+	}
+}
+
+.icons-social i {
+	font-size: 3em;
+}
+
+/* Custom Styles */
+
+main {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: center;
+	padding: 0 30px;
+	text-align: center;
+}
+
+main > .intro {
+	font-family: 'Reem Kufi', sans-serif;
+	font-size: 3.75em;
+	font-weight: 600;
+}
+
+main > .tagline {
+	font-size: 1.5rem;
+	margin: 1.5rem 0;
+	font-weight: 100;
+}
+
+.icons-social i {
+	padding: 10px;
+}
+
+.devto {
+	margin-bottom: -0.20rem;
+}
+
+.devto svg {
+	margin-bottom: -0.20rem;
+	margin-left: 0.675rem;;
+	width: 2.65rem;
+	height: 2.65rem;
+}
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+div#footer
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+div#footer text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 700;
+    font-size: 2.6em;
+    color: #333;
+    top: 25px;
+}
+div#links
+{
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+ul
+{
+  position: relative;
+}
+ul li
+{
+  list-style: none;
+  text-align: center;
+}
+ul li a
+{
+  color: #333;
+  text-decoration: none;
+  font-size: 2.5em;
+  padding: 5px 20px;
+  display: inline-flex;
+  font-weight: bold;
+  transition: 0.5s;
+}
+ul:hover li a
+{
+  color: #0002;
+}
+ul li:hover a
+{
+  color: #000;
+  background: rgba(255,255,255,1);
+}
+ul li a:before
+{
+  content: '';
+  position: absolute;
+  top: 50%;
+  word-spacing: 100vw;
+  left: 40%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10vw;
+  color: rgba(0,0,0,.2);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 500px;
+  transition: letter-spacing 0.5s,left 0.5s;
+}
+ul li a:hover:before
+{
+  content: attr(data-text);
+  opacity: 1;
+  left: 50%;
+  letter-spacing: 10px;
+  width: 1800px;
+  height: 1800px;
+}
+ul li:nth-child(6n+1) a:before
+{
+  background: #81ecec;
+}
+ul li:nth-child(6n+2) a:before
+{
+  background: #ff7675;
+}
+ul li:nth-child(6n+3) a:before
+{
+  background: #55efc4;
+}
+ul li:nth-child(6n+4) a:before
+{
+  background: #a29bfe;
+}
